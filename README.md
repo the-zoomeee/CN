@@ -1,6 +1,7 @@
 # CN
 
 ## router config
+```
 en
 config t
 hostname R1
@@ -12,6 +13,7 @@ int Serial0/0/0
 ip add 12.0.0.3 255.255.255.252
 clock rate 64000
 no shut
+```
 
 ## static route
 en
