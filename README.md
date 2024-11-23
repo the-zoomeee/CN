@@ -16,31 +16,36 @@ no shut
 ```
 
 ## static route
+```
 en
 config t
 hostname R1
 ip route 192.168.1.0 255.255.255.0 10.0.0.0
 ex
+```
 
 ## RIP route
+```
 en
 config t
 hostname R1
 router rip
 network 192.168.1.0 (all connected adjacent devices)
 ex
+```
 
 
 ## OSPF route
+```
 en
 config t
 hostname R1
 router ospf 1
 network 192.168.1.0 0.0.0.255 area 0
-
-
+```
 
 ## DHCP pool
+```
 en
 config t
 hostname R1
@@ -51,3 +56,4 @@ dns-server (dns ip)
 ex
 ip dhcp excluded-address 10.0.0.2 10.0.0.10
 ex
+```
